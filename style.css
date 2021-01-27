@@ -1,0 +1,115 @@
+body
+{
+    background: url(../images/bg.png);
+}
+
+/*Nous appliquons du style aux elements de notre div container qui contient la class site*/
+.site
+{
+    font-family: "Holtwood One SC", sans-serif;
+}
+.text-logo
+{
+    font-family: "Haltwood One SC", sans-serif;
+    color: #e7480f;
+    text-shadow: 2px 2px #ffd301;
+    font-size: 50px;
+    padding: 40px 0px;
+    text-align: center;
+}
+.text-logo .glyphicon
+{
+    color: #ffd301;
+    text-shadow: 0px 0px #ffd301; /*0px vu que mon glyphicon herite du text shadow de la class text.logo qui le contient, je dois l'annuler avec 0px et mettre sa coulor*/
+}
+.nav
+{
+    margin-bottom: 40px;
+}
+.thumbnail img
+{
+    background: #ffd301;
+}
+.price
+{
+    background: #5cb85c;
+    box-shadow: 0 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 1px rbga(0,0,0,0.2); /*Pour que ca marche avec les navigateurs*/
+    -webkit-box-shadow: 0 1px rgba(0,0,0,0.2); /*Pour que ca marche avec les navigateurs*/
+    color: #fff;
+    text-shadow: 2px 2px #333;
+    position: absolute;
+    right: 6px;
+    top: 20px;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 3px;
+}
+.price:before /*la pseudo class before*/
+{
+    border: 4px solid transparent;
+    border-bottom: 4px solid #4a934a;
+    border-left: 4px solid #4a934a;
+    content: "";
+    position: absolute;
+    right: 1px;
+    top: -8px;
+}
+.price:before /*la pseudo class before*/
+{
+    border: 4px solid transparent;
+    border-bottom: 4px solid #4a934a;
+    border-left: 4px solid #4a934a;
+    content: ""; /*il faut tjrs un content pour un elment before*/
+    position: absolute;
+    right: 1px;
+    top: -8px;
+}
+.caption > h4 /*tu le mets en Orange et tu lui mets une taille de 18px */
+{
+    color: #e7480f;
+    font-size: 18px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover /*Donc le boutton menu active va garder le background orange*/
+{
+    background: #e7480f;
+}
+.nav>li>a:focus, .nav>li>a:hover /*les autres elements de notre nav*/
+{
+    color: #e7480f;
+    background-color: #eee;
+}
+.nav>li>a /*kracteristik style sans les hover etc */
+{
+    color: #eee;
+    font-size: 18px;
+    text-shadow: 2px 2px #333;
+}
+.btn-order
+{
+    width: 100%; /* pour dire prend 100% de la largeur de l'element parent. Ici c'est la div caption qui contient le h4 et le p puis le button <a> */
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #e7480f;
+    text-decoration: none;
+    text-shadow: 2px 2px #333;
+}
+.btn-order:hover, .btn-order:focus
+{
+    color: #fff; /*On reprecise color #fff pour passer sur bootstrap sinon il va attribuer une autre color.*/
+    background-color: #c13c0d; /*La couleur orange ici est plus fonce qd la souris passe dessus*/
+}
+
+
+/* partie Admin */
+body .admin
+{
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+}
+.help-inline
+{
+    color: red;
+}
